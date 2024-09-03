@@ -1,0 +1,10 @@
+ // Når vi bruger navigation, skal koden 'wrappes' i en NavigationContainer
+    <NavigationContainer>
+    <Stack.Navigator>
+      {/* Name er det navn vi bruger senere hen når vi vil navigere til en bestemt side. 
+      component er navnet på componenten  */}
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Cat" component={CatScreen} />
+      </Stack.Navigator>
+
+    </NavigationContainer>

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "valgfagsEksamen",
-    "slug": "valgfagsEksamen",
+    "name": "navigation-app",
+    "slug": "navigation-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +12,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.navigation-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +23,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "react-native-health"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "24fdf3ef-eafb-4565-8046-24a3d18840b0"
+      }
     }
   }
 }
