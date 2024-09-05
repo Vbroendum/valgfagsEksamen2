@@ -3,19 +3,20 @@ import RingProgress from "../components/RingProgress";
 import TouchButtons from "../components/TouchButtons";
 import Greetings from "../components/Greetings";
 import { useState } from 'react';
+import DatoDisplay from "../components/DatoDisplay";
+import { StatusBar, useColorScheme } from 'react-native';
 
 const STEP_GOAL = 10.000;
 
 export default function HomeScreen() {
 
-
-
+  const colorScheme = useColorScheme();
 
     return (
         <View style={styles.container}>
           <Greetings style={styles.greetings}/>
           <RingProgress 
-            progress={0.2}
+            progress={0}
             textLine2="10000"
           />
           <View style={styles.buttons}>

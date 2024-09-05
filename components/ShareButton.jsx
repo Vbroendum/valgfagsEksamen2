@@ -46,6 +46,7 @@ const shareButton = () => {
           padding: 12,
           backgroundColor: '#3C3C3C',
           borderRadius: 8,
+          marginBottom: '8%',
         },
 
         buttonContent: {

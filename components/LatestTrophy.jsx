@@ -5,9 +5,11 @@ const LatestTrophy = () => {
   return (
     <View style={styles.section}>
       <Text style={styles.sectionTitle}>Seneste Trofæ</Text>
-      <View style={styles.largeTrophyCard}>
-        <Image source={require('../img/3.png')} style={styles.largeTrophyImage} />
-        <Text style={styles.largeTrophyName}>Gående Konge</Text>
+      <View style={styles.trophyWrapper}>
+        <View style={[styles.largeTrophyCard, styles.blueBackground]}>
+          <Image source={require('../img/3.png')} style={styles.largeTrophyImage} />
+          <Text style={styles.largeTrophyName}>Gående Konge</Text>
+        </View>
       </View>
     </View>
   );
@@ -25,13 +27,21 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     textAlign: 'center',
   },
-  largeTrophyCard: {
-    width: '80%',
-    backgroundColor: '#2B8BE4',
-    padding: 24,
+  trophyWrapper: {
+   
     borderRadius: 12,
+    padding: 16,
+    backgroundColor: '#444',  // Slightly darker background to mimic the card look
+  },
+  largeTrophyCard: {
     alignItems: 'center',
-    marginBottom: 16,
+    borderRadius: 12,
+    padding: 16,
+  },
+  blueBackground: {
+    backgroundColor: '#2B8BE4',  // Light blue background for the image container
+    borderRadius: 12,
+    padding: 16,
   },
   largeTrophyImage: {
     width: 100,

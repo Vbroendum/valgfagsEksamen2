@@ -19,7 +19,7 @@ const DatoDisplay = ({ dato }) => {
 const styles = StyleSheet.create({
     container: {
       justifyContent: 'center',
-      paddingBottom: 4,
+      marginBottom: 4,
     },
     dateText: {
       fontSize: 20,

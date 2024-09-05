@@ -7,8 +7,8 @@ const TouchButtons = () => {
     const navigation = useNavigation(); 
 
 
-    const navigateToCalendar = () => {
-        navigation.navigate('Calendar'); 
+    const navigateToMap = () => {
+        navigation.navigate('Map'); 
     };
 
     const navigateToAward = () => {
@@ -17,10 +17,10 @@ const TouchButtons = () => {
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={navigateToCalendar} style={styles.button}>
+            <TouchableOpacity onPress={navigateToMap} style={styles.button}>
                 <View style={styles.buttonContainer}>
-                    <Icon name="calendar-outline" size={32} color="white" />
-                    <Text style={styles.buttonText}>Kalender</Text>
+                    <Icon name="map-outline" size={32} color="white" />
+                    <Text style={styles.buttonText}>Rute-Tracker</Text>
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={navigateToAward} style={styles.button}>
